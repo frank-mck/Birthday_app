@@ -17,20 +17,20 @@
      end
    end
 
-   private
-
-   def birthday_message
-    "Happy Birthday #{@name}"
-   end
-
-   def days_til_birthday
-    "Your Birthday will be in #{days_left} day#{days_left > 1 ? 's' : ''}, #{@name}"
-   end
-
    def days_left
     max.to_i - min.to_i
    end
- 
+
+   private
+
+   def birthday_message
+    "Happy Birthday #{@name}!"
+   end
+
+   def days_til_birthday
+    "Your Birthday will be in #{days_left} day#{days_left > 1 ? 's' : ''}, #{@name}."
+   end
+
    def my_birthday_day
     @date.strftime "%j"
    end

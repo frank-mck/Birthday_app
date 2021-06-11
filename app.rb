@@ -2,7 +2,6 @@ require 'sinatra'
 require "sinatra/reloader"
 require './lib/birthday'
 
-
 class Bday < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
@@ -20,7 +19,6 @@ post '/birthday' do
   @birthday = Birthday.new(@name, @day)
   erb :birthday
 end
-
 
  # start the server if ruby file executed directly
  run! if app_file == $0

@@ -3,15 +3,15 @@
 <form action = '/birthday' method ='post'>
 <fieldset>
 <label for ="name">What's your name?
-<input type ="text" name ="name" placeholder = "Enter your name...">
+<br>
+<input class ='name' type ="text" name ="name" placeholder = "Enter your name...">
 </label>
 
-<h2>When's your birthday?</h2>
-<div class ="day_month">
-  <label class ="day_month" for ="day">Day:
+<label class ='birthday' for ="when-is-your-birthday">When's your birthday?</label>
+<span class ="day_month">
+  <label for ="day">Day:
   <input type ="text" name ="day">
   </label>
-
   <label for ="birthday_month">Month:
 <select name ="birthday_month" id ="months">
   <option value="January">January</option>
@@ -28,9 +28,10 @@
   <option value="December">December</option>
 </select>
 </label>
-</div>
+
+</span>
+<input class ='btn' type ='submit' value ='Submit'>
 </fieldset>
-<input class ='btn' type ="submit" action = '/birthday' method ='post' >
 </form>
 </div>
 
@@ -40,19 +41,27 @@ div {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 3rem;
+  font-family: sans-serif;
 }
 
 .day_month {
+  padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  
+}
+
+.name {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
 }
 
 h1 {
-  font-weight: 600;
-  font-size: 4rem;
+  font-weight: 700;
+  font-size: 5rem;
   color: orange;
   letter-spacing: 2mm;
 }
@@ -61,14 +70,16 @@ fieldset {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 1rem;
   border: none;
+}
+
+.birthday {
+  padding-bottom: 0px;
 }
 
 .btn {
   height: 40px;
   border-radius: 5px;
-  margin-top: 1rem;
 }
 
 select {
@@ -79,6 +90,7 @@ select {
 label {
   font-size: 2rem;
   padding: 1.2rem;
+  font-weight: 200;
 }
 
 input {
