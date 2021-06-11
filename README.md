@@ -14,11 +14,10 @@ When the user submits the form, and depending on the current date, the app will 
 ```
 git clone https://github.com/frank-mck/Birthday_app.git
 ```
-Open in browser
 ```
 ruby app.rb
 ```
-click this [link](http://localhost:4567)
+Open in [browser](http://localhost:4567)
 
 Run tests
 ```
