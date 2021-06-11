@@ -1,6 +1,6 @@
 # Birthday_app
 
-Makers week 3 practicals(intro to the web). Self directed learning.
+Makers week 3 practicals(intro to the web).
 
 ## Description
 A web app that will ask the user for a name and birthday.
@@ -18,7 +18,7 @@ Open in browser
 ```
 ruby app.rb
 ```
-click this [link](localhost:4567)
+click this [link](http://localhost:4567)
 
 Run tests
 ```
