@@ -2,9 +2,35 @@
 <h1>Hello there!</h1>
 <form action = '/birthday' method ='post'>
 <fieldset>
-<label for ='name'>What's your name?</label>
+<label for ="name">What's your name?
 <input type ="text" name ="name" placeholder = "Enter your name...">
+</label>
+
+<h2>When's your birthday?</h2>
+<div class ="day_month">
+  <label class ="day_month" for ="day">Day:
+  <input type ="text" name ="day">
+  </label>
+
+  <label for ="birthday_month">Month:
+<select name ="birthday_month" id ="months">
+  <option value="January">January</option>
+  <option value="February">February</option>
+  <option value="March">March</option>
+  <option value="April">April</option>
+  <option value="May">May</option>
+  <option value="June">June</option>
+  <option value="July">July</option>
+  <option value="August">August</option>
+  <option value="September">September</option>
+  <option value="October">October</option>
+  <option value="November">November</option>
+  <option value="December">December</option>
+</select>
+</label>
+</div>
 </fieldset>
+<input class ='btn' type ="submit" action = '/birthday' method ='post' >
 </form>
 </div>
 
@@ -16,9 +42,47 @@ div {
   flex-direction: column;
 }
 
+.day_month {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 h1 {
   font-weight: 600;
   font-size: 4rem;
   color: orange;
   letter-spacing: 2mm;
 }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  border: none;
+}
+
+.btn {
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+select {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 2rem;
+  padding: 1.2rem;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+}
+</style>
